@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">🎓</div>
+
+        <h1>Student Login</h1>
+
+        <p class="subtitle">Access your blockchain-secured records</p>
+
+        <form action="/student_dashboard" method="POST">
+
+            <input type="text" name="usn" placeholder="Enter USN" required>
+
+            <button type="submit">View Record</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

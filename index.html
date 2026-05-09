@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blockchain Student Record System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Blockchain Student Record System</h1>
+
+        <form action="/add_student" method="POST">
+
+            <input type="text" name="name" placeholder="Enter Name" required>
+
+            <input type="text" name="usn" placeholder="Enter USN" required>
+
+            <input type="text" name="department" placeholder="Enter Department" required>
+
+            <input type="text" name="marks" placeholder="Enter Marks" required>
+
+            <button type="submit">Add Student</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
